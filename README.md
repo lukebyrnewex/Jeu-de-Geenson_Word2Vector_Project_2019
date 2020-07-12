@@ -8,13 +8,14 @@ The project description, along with the READ_ME in French and English, is provid
 
 ## READ_ME de JEU DE GEENSON
 by Luke Byrne, Lilian Morgan and Heather Lloyd
-March 2019-May 2019
+March 2019--May 2019
 
-Foreword: this project was completed entirely in French, and the original READ_ME
+### Foreword
+This project was originally completed entirely in French, and the original READ_ME
 too, so it is important to keep in mind that some parts may seem bizarre, 
 such as the input "deMagique" instead of"magicDie", for example.
 
-## COMMAND LINE
+## Command Line
 We named our Main "Game", so the following is used for the command line:
 	java Game --w2v ../w2v_final3 --nbPlayers 2 --nbTry 3 --k 5 --deMagique
 and thus without the input descriptions, it would be:
@@ -33,11 +34,11 @@ The command line variable descriptions are taken directly from the project docum
 also a normal die in the standard case; that is, if you don't write anything down, like:
 	java game ../w2v_final3 2 3 5
 
-## QUERY SYNTAX
+## Query Syntax
 During the game rounds, the game takes clues that you guess: these are
 Strings. Other than these Strings, there's no other query syntax to remember.
 
-## PROGRAM ARCHITECTURE
+## Program Architecture
 This game/program consists of 7 classes whose descriptions can be found in the javadoc.
 Firstly, we have a Vector class which designates the basis of the VectorList, our data 
 structure of choice which contains the data in the file. The Vector includes the word, 
@@ -59,7 +60,7 @@ and you have a certain amount of tries (specified in the input) to guess three w
 which, after having calculated their similarities, will have in the output that same word.
 There are also special squares (move back by three steps, roll the dice again etc.).
 
-## IMPLEMENTATION CHOICES
+## Implementation Choices
 We have chosen to create Vector and VectorList classes so that we can easily vector list
 -- they've proven to be very fast.
 
